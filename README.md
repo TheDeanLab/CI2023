@@ -33,43 +33,42 @@ In today's world of scientific research and development, the ability to effectiv
 > Activities: Activate an environment, clone a repo with a pyproject, build it, something that already exists.
 	Make our own repo on GitHub, specify some dependencies that need to be used, and they should create a pytoml thing, organize the repo, and make a push.
 
-4.	Code Organization Strategies – Dushyant 
+4.	Code Organization Strategies
 - Organizational Strategies for repos: src/ test/ docs/
 - Model View Controller
 
-5. Collaborative Development Workflows – Dushyant 
+5. Collaborative Development Workflows
 - Strategies for efficient collaboration using Git.
 - Working with remote repositories and managing pull requests.
 -  Techniques to maintain code quality.
 > Activities:	Upload individual files to Git. Place code in calculator appropriate folder (src/ test/ docs/ or MVC)
 
 ### Day 2
-1.	Pre-commit Hooks, Linters, Code Formatters – Dushyant 
+1.	Pre-commit Hooks, Linters, Code Formatters
 - Utilizing pre-commit hooks to enforce coding standards and maintain code quality.
 - Clean codes
-> Activities: Set up Ruff locally. Set up a pre-commit hook to run Ruff and Black (code formatter) and install it
-	Push a commit.
+> Activities: Set up Ruff locally. Set up a pre-commit hook to run Ruff and Black (code formatter) and install it.	Push a commit.
 
-2. Unit Testing and Test-Driven Development (TDD) – Zach
+2. Unit Testing and Test-Driven Development (TDD) 
 - Importance of unit testing in software development.
 - Writing effective unit tests using Python's testing frameworks.
 - incorporating test-driven development principles into the development process
 > Activities:	Write some unit tests on calculator evaluation
 
-3. Introduction to continuous integration and its benefits – Zach
+3. Introduction to continuous integration and its benefits 
 - Different types of continuous integration tools.
 - Unit tests.
 
-4. Setting up CI pipelines using popular tools on GitHub – Zach 
+4. Setting up CI pipelines using popular tools on GitHub 
 - Pytest
 - Codecov
 - Unit testing CI
 > Activities: Setup GitHub Actions on the repo.
 
-5. Public-facing documentation – Zach 
+5. Public-facing documentation
 - Sphinx/Compiled numpy doc 
 > Activities: Setup Sphinx to github pages. Numpy doc. GitHub actions for doc creation.
 
-6. Stable releases – Dushyant
+6. Stable releases
 - Versioning, stable DOIs, tag that you can always go back to for a publication.
 > Activities: We will try to import corrupted code and students will try to fix it (or potentially catch error with unit tests in the pull request?)
