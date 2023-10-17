@@ -1,5 +1,4 @@
-# CI2023
-## Introduction to Python Software Development on GitHub
+# Introduction to Python Software Development on GitHub
 
 ### Date: 10/24/2023-10/25/2023.
 
@@ -7,12 +6,6 @@
 Kevin Dean, Ph.D.
 Zach Marin, Ph.D.
 Dushyant Mehra, Ph.D.
-
-### Credit Hours: 1
-
-### Room: G9.250A
-
-### Class Size: 20.
 
 ### Course Description: 
 In today's world of scientific research and development, the ability to effectively collaborate and develop software as a team is essential. This two-day introductory course is designed specifically for graduate students and postdoctoral researchers seeking to enhance their software development skills in Python and embrace modern continuous integration practices on GitHub. Participants will gain hands-on experience in using Git, pre-commit hooks, unit testing, managing dependencies, and ultimately maintaining stable code. and maintaining stable code through detailed environment requirements. The skills gained in this course will enable participants to work efficiently as part of a team, ensuring the development of high-quality and maintainable software.
@@ -50,7 +43,7 @@ In today's world of scientific research and development, the ability to effectiv
 -  Techniques to maintain code quality.
 > Activities:	Upload individual files to Git. Place code in calculator appropriate folder (src/ test/ docs/ or MVC)
 
-## Day 2
+### Day 2
 1.	Pre-commit Hooks, Linters, Code Formatters – Dushyant 
 - Utilizing pre-commit hooks to enforce coding standards and maintain code quality.
 - Clean codes
