@@ -5,6 +5,7 @@
 
 """ Simple calculator built with Python and PyQt5 library """
 
+import os
 import sys
 
 from .view import PyCalcUi
