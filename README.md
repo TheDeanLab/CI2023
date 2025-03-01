@@ -1,6 +1,4 @@
-# Nanocourse Title: Introduction to Python Software Development on GitHub
-
-**Credit Hours:** 1
+# Introduction to Python Software Development on GitHub
 
 ## Course Description
 
