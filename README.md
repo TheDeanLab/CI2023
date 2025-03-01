@@ -1,17 +1,6 @@
 # Nanocourse Title: Introduction to Python Software Development on GitHub
 
-**Date:** 10/24/2023 - 10/25/2023
-
-**Instructors:**
-- Kevin Dean, Ph.D.
-- Zach Marin, Ph.D.
-- Dushyant Mehra, Ph.D.
-
 **Credit Hours:** 1
-
-**Room:** G9.102
-
-**Class Size:** 20
 
 ## Course Description
 
@@ -19,7 +8,7 @@ In today's world of scientific research and development, the ability to effectiv
 
 ## Day 1
 
-### 9:00 AM - Introduction to Collaborative Software Development (Kevin)
+### 9:00 AM - Introduction to Collaborative Software Development
 - Understanding the importance of collaboration in software development projects.
 - Overview of version control systems and their significance.
 - Introduction to Git and its role in facilitating team-based development.
@@ -28,7 +17,7 @@ In today's world of scientific research and development, the ability to effectiv
 - Activities
   - Create a GitHub account.
 
-### 10:00 AM - Environment Management with Anaconda (Kevin)
+### 10:00 AM - Environment Management with Anaconda
 - Creating reproducible development environments with virtual environments.
 - Basic Anaconda commands.
 - Dependency Management and Environment Requirements using package managers (pip, conda).
@@ -38,7 +27,7 @@ In today's world of scientific research and development, the ability to effectiv
   - Download and install Miniconda.
   - Set up two virtual environments with Anaconda, each with a few hand-selected dependencies. Switch between the repos. Launch python. Run a command that requires the dependency.
 
-### 11:00 AM - Git Essentials (Kevin)
+### 11:00 AM - Git Essentials
 - Branching and merging strategies for team collaboration.
 - Resolving conflicts.
 - Git blame, merge, fork, pull request, commit, checkout, diff, fetch, advanced section (working from a fork, working on a project that you are not allowed to commit to).
@@ -49,14 +38,14 @@ In today's world of scientific research and development, the ability to effectiv
 
 ### 12:30 PM - Lunch
 
-### 1:30 PM - Code Organization Strategies (Kevin)
+### 1:30 PM - Code Organization Strategies
 - Organizational Strategies for repos: src/ test/ docs/
 - Model View Controller
 - Activities
   - Upload individual files to Git
   - Place code in calculator appropriate folder (src/ test/ docs/ or MVC)
 
-### 2:30 PM - Calculator Time (Zach & Dushyant)
+### 2:30 PM - Calculator Time
 - Intro to Calculator Assignment
 - Split into teams of 4. Self-organization. Ask to have at least one novice and expert per team
 - We provide a zip file without structure.
@@ -68,7 +57,7 @@ In today's world of scientific research and development, the ability to effectiv
 
 ## Day 2
 
-### 9:00 AM - Introduction to Continuous Integration and its Benefits (Zach)
+### 9:00 AM - Introduction to Continuous Integration and its Benefits
 - Different types of continuous integration tools.
 - Unit tests.
 - Code formatters.
@@ -76,7 +65,7 @@ In today's world of scientific research and development, the ability to effectiv
 - Code Coverage.
 - Code QL
 
-### 9:30 AM - Pre-commit Hooks, Linters, Code Formatters (Dushyant)
+### 9:30 AM - Pre-commit Hooks, Linters, Code Formatters
 - Techniques to maintain code quality.
 - Utilizing pre-commit hooks to enforce coding standards and maintain code quality.
 - Clean codes
@@ -85,7 +74,7 @@ In today's world of scientific research and development, the ability to effectiv
   - Set up a pre-commit hook to run Ruff and Black (code formatter) and install it.
   - Push a commit.
 
-### 10:30 AM - Unit Testing and Test-Driven Development (TDD) (Dushyant)
+### 10:30 AM - Unit Testing and Test-Driven Development (TDD)
 - Importance of unit testing in software development.
 - Writing effective unit tests using Python's testing frameworks.
 - Incorporating test-driven development principles into the development process
@@ -93,7 +82,7 @@ In today's world of scientific research and development, the ability to effectiv
   - Write some unit tests on calculator evaluation.
   - We will try to import corrupted code, and students will try to fix it (or potentially catch errors with unit tests in the pull request?)
 
-### 11:30 AM - Setting up CI pipelines using popular tools with GitHub Actions (Zach)
+### 11:30 AM - Setting up CI pipelines using popular tools with GitHub Actions
 - Event-driven actions – PRs. Documentation only run on that event.
 - Pytest
 - Unit testing CI
@@ -102,14 +91,14 @@ In today's world of scientific research and development, the ability to effectiv
 
 ### 12:30 PM – Lunch
 
-### 1:30 PM - Public-facing Documentation (Zach)
+### 1:30 PM - Public-facing Documentation
 - Sphinx/Compiled numpy doc
 - Activities – 30 minutes.
   - Setup Sphinx to GitHub pages.
   - Numpy doc.
   - GitHub actions for doc creation.
 
-### 2:30 PM - Stable Releases (Dushyant)
+### 2:30 PM - Stable Releases
 - Versioning, stable DOIs, tag that you can always go back to for a publication.
 - Zenodo, twine, PyPI, Conda Constructor, if there is time.
 - Activities
