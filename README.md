@@ -1,108 +1,143 @@
-# Introduction to Python Software Development on GitHub
+# **Collaborative Git & GitHub Activity: Organizing and Packaging PyCalc**
 
-## Course Description
+## **📝 Overview**
 
-In today's world of scientific research and development, the ability to effectively collaborate and develop software as a team is essential. This two-day introductory course is designed specifically for graduate students and postdoctoral researchers seeking to enhance their software development skills in Python and embrace modern continuous integration practices on GitHub. Participants will gain hands-on experience in using Git, pre-commit hooks, unit testing, managing dependencies, and ultimately maintaining stable code. The skills gained in this course will enable participants to work efficiently as part of a team, ensuring the development of high-quality and maintainable software.
+In this activity, students will collaborate in groups of four to practice using **Git, GitHub, pull requests, bug fixing, and Python packaging**. Each group will work on a **central GitHub repository** to properly organize and package the **PyCalc** project, ensuring it can be installed using `pip install -e .`.
 
-## Day 1
+This activity will simulate a real-world software development workflow, where multiple developers work on the same project using version control and pull requests.
 
-### 9:00 AM - Introduction to Collaborative Software Development
-- Understanding the importance of collaboration in software development projects.
-- Overview of version control systems and their significance.
-- Introduction to Git and its role in facilitating team-based development.
-- Basic Git commands and workflows.
-- GitHub desktop
-- Activities
-  - Create a GitHub account.
+---
 
-### 10:00 AM - Environment Management with Anaconda
-- Creating reproducible development environments with virtual environments.
-- Basic Anaconda commands.
-- Dependency Management and Environment Requirements using package managers (pip, conda).
-- Setup.py?
-- Integrated package, linting, CI, maintenance with a pyproject.toml
-- Activities
-  - Download and install Miniconda.
-  - Set up two virtual environments with Anaconda, each with a few hand-selected dependencies. Switch between the repos. Launch python. Run a command that requires the dependency.
+## **🎯 Learning Objectives**
 
-### 11:00 AM - Git Essentials
-- Branching and merging strategies for team collaboration.
-- Resolving conflicts.
-- Git blame, merge, fork, pull request, commit, checkout, diff, fetch, advanced section (working from a fork, working on a project that you are not allowed to commit to).
-- Creating issues, branches, linking branches to issues, …
-- Activities
-  - Activate an environment, clone a repo with a pyproject, build it, something that already exists.
-  - Make our own repo on GitHub, specify some dependencies that need to be used, and they should create a pyproject.toml thing, organize the repo, and make a push.
+By the end of this activity, students will:
 
-### 12:30 PM - Lunch
+- Understand how to **clone** a repository and work in a **collaborative Git workflow**.
+- Learn how to **add and commit files**, **push to GitHub**, and **merge contributions via pull requests**.
+- Properly **structure a Python project** to work with `pyproject.toml` and `setuptools`.
+- Successfully **install and run** the `pycalc` package using `pip install -e .`.
 
-### 1:30 PM - Code Organization Strategies
-- Organizational Strategies for repos: src/ test/ docs/
-- Model View Controller
-- Activities
-  - Upload individual files to Git
-  - Place code in calculator appropriate folder (src/ test/ docs/ or MVC)
+---
 
-### 2:30 PM - Calculator Time
-- Intro to Calculator Assignment
-- Split into teams of 4. Self-organization. Ask to have at least one novice and expert per team
-- We provide a zip file without structure.
-- They create a repo, they all push their individual files, and then they start to work together to establish functioning code.
-- We will create an error. They will have to log an issue. If time, fix the error with a linked branch, make a PR.
-- We will intentionally provide sloppy code with unused imports, variables, etc.
+## **🛠️ Activity Setup**
 
-### 5:00 PM - Depart
+### **1️⃣ Student 1 Creates the Central GitHub Repository**
 
-## Day 2
+- One group member will **Fork** this repository, creating a new Repo on their machine and GitHub account.
+- They will add the **other three group members as collaborators** to the Fork, with write access.
 
-### 9:00 AM - Introduction to Continuous Integration and its Benefits
-- Different types of continuous integration tools.
-- Unit tests.
-- Code formatters.
-- Documentation.
-- Code Coverage.
-- Code QL
+### **2️⃣ Students 2-3 Clone the Repository Using GitHub Desktop**
 
-### 9:30 AM - Pre-commit Hooks, Linters, Code Formatters
-- Techniques to maintain code quality.
-- Utilizing pre-commit hooks to enforce coding standards and maintain code quality.
-- Clean codes
-- Activities – 30 minutes.
-  - Set up Ruff locally.
-  - Set up a pre-commit hook to run Ruff and Black (code formatter) and install it.
-  - Push a commit.
+1. Open **GitHub Desktop**.
+2. Click **File > Clone Repository**.
+3. Select the repository from the list or enter its URL.
+4. Choose a local path and click **Clone**.
 
-### 10:30 AM - Unit Testing and Test-Driven Development (TDD)
-- Importance of unit testing in software development.
-- Writing effective unit tests using Python's testing frameworks.
-- Incorporating test-driven development principles into the development process
-- Activities – 30 minutes.
-  - Write some unit tests on calculator evaluation.
-  - We will try to import corrupted code, and students will try to fix it (or potentially catch errors with unit tests in the pull request?)
+---
 
-### 11:30 AM - Setting up CI pipelines using popular tools with GitHub Actions
-- Event-driven actions – PRs. Documentation only run on that event.
-- Pytest
-- Unit testing CI
-- Activities – 30 minutes.
-  - Setup GitHub Actions on the repo.
+## **📂 File Distribution & Aggregation**
 
-### 12:30 PM – Lunch
+Each student downloads their **ZIP** file from: 🔗 [CI2023 Calculator Exercise](https://github.com/TheDeanLab/CI2023/tree/main/calculator-exercise)
 
-### 1:30 PM - Public-facing Documentation
-- Sphinx/Compiled numpy doc
-- Activities – 30 minutes.
-  - Setup Sphinx to GitHub pages.
-  - Numpy doc.
-  - GitHub actions for doc creation.
+Unzip the files somewhere locally on your machine.
 
-### 2:30 PM - Stable Releases
-- Versioning, stable DOIs, tag that you can always go back to for a publication.
-- Zenodo, twine, PyPI, Conda Constructor, if there is time.
-- Activities
-  - Setup a stable release
+The idea is that each of you has some portion of the project completed locally and you are going to push it to the project Repo.
 
-### 3:30 PM – Finish Calculator and CI Workflows.
-- Potentially discuss individual projects.
+Each student should:
 
-### 5:00 PM - Depart
+1. **Download and move** their assigned files into the cloned Repo. You can put them in the same folder as the **README.md** that you are reading here.
+2. **Create a new branch** in GitHub Desktop:
+   - Click **Current Branch > New Branch**.
+   - Name the branch based on the feature (e.g., `push-files`).
+3. **Commit and push changes**:
+   - Click **Changes**, add a descriptive commit message, and commit.
+   - Click **Push Origin** to upload the branch to GitHub.
+4. **Open a pull request (PR) on GitHub** to merge their files into `main`.
+
+---
+
+## **📦 Restructuring the Project for Packaging**
+
+After all files are in the central repo, students must individually attempt to restructure the package **without modifying the source code**.
+
+### **🔄 Steps for Restructuring the Repository**
+
+1. **Each student creates their own restructuring attempt** by making a new branch in GitHub Desktop:
+   - Click **Current Branch > New Branch**.
+   - Name it `restructure-<studentname>` (e.g., `restructure-alex`).
+2. Each student should organize the files in a way that ensures `pycalc` can be installed using `pip install -e .`.
+3. **Commit and push their restructuring attempt** in GitHub Desktop:
+   - Click **Changes**, add a descriptive commit message, and commit.
+   - Click **Push Origin**.
+4. **One student will switch between the restructuring branches** in GitHub Desktop and attempt to install `pycalc` on each version:
+   - Click **Current Branch**, select a `restructure-<studentname>` branch.
+   - Run:
+     ```sh
+     pip install -e .[dev]
+     ```
+5. If a student's structure successfully installs the package, the group will choose that version to merge into `main`.
+6. Open a pull request for the selected structure and merge it into `main`.
+
+---
+
+## **⚙️ Installing & Testing the Package**
+
+Once the repository is correctly structured and merged into `main`:
+
+1. **Install the package in editable mode:**
+   ```sh
+   pip install -e .[dev]
+   ```
+2. **Verify installation:**
+   ```sh
+   python -c "import pycalc; print(pycalc)"
+   ```
+3. **Run tests using **``:
+   ```sh
+   pytest
+   ```
+
+---
+
+## **🔍 Debugging & Bug Fixing**
+
+If any issues arise, students should:
+
+1. Use **GitHub Desktop > History** to check commit history.
+2. Use **GitHub Pull Requests** to track changes before merging.
+3. Open an **Issue on GitHub** and assign team members to debug.
+4. If an error occurs (e.g., `ModuleNotFoundError`), reinstall:
+   ```sh
+   pip uninstall pycalc
+   pip install -e .[dev]
+   ```
+
+---
+
+## **📌 Submission & Reflection**
+
+### **Final Deliverables:**
+
+✅ The fully structured GitHub repository with all files correctly organized.\
+✅ A working installation of `pycalc` using `pip install -e .`.\
+✅ Successful test execution with `pytest`.
+
+Each group should submit their **GitHub repository link** and a brief **reflection** answering:
+
+1. What challenges did you encounter during collaboration?
+2. What did you learn about GitHub workflows?
+3. How did restructuring the package impact the ability to install and test the project?
+
+---
+
+## **🎉 Conclusion**
+
+This activity reinforces real-world GitHub workflows, collaborative version control, and Python packaging concepts. By working together to structure and package PyCalc, students gain hands-on experience with:
+
+- **Cloning, branching, committing, and pushing code using GitHub Desktop**.
+- **Pull requests and merging collaborative contributions**.
+- **Debugging issues related to Python packaging and imports**.
+- **Testing code using **``** in a structured Python project**.
+
+🚀 **Great work! Now you have experience working on a real-world collaborative software project!**
+
