@@ -118,7 +118,7 @@ class PyCalcUi(QMainWindow):
         # Create buttons and add to grid layout
         for btnText, pos in buttons.items():
             self.buttons[btnText] = QPushButton(btnText)
-            self.buttons[btnText].setFixedSize(100, 100)
+            self.buttons[btnText].setFixedSize(40, 40)
             buttonsLayout.addWidget(self.buttons[btnText], pos[0], pos[1])
         # Add buttonsLayout to general layout
         self.generalLayout.addLayout(buttonsLayout)
