@@ -4,6 +4,7 @@ pyproject.toml
 src/constants.py
 src/controller.py
 src/model.py
+src/pycalc.py
 src/view.py
 src/pycalc.egg-info/PKG-INFO
 src/pycalc.egg-info/SOURCES.txt
