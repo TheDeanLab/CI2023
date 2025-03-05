@@ -45,7 +45,7 @@ The idea is that each of you has some portion of the project completed locally a
 
 Each student should:
 
-1. **Download and move** their assigned files into the cloned Repo.
+1. **Download and move** their assigned files into the cloned Repo. You can put them in the same folder as the **README.md** that you are reading here.
 2. **Create a new branch** in GitHub Desktop:
    - Click **Current Branch > New Branch**.
    - Name the branch based on the feature (e.g., `push-files`).
