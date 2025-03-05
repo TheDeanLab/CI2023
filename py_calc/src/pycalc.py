@@ -8,7 +8,7 @@
 import os
 import sys
 
-from ..test.view import PyCalcUi
+from .view import PyCalcUi
 from .controller import PyCalcCtrl
 from .model import evaluateExpression
 
