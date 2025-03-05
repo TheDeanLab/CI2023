@@ -21,13 +21,12 @@ By the end of this activity, students will:
 
 ## **🛠️ Activity Setup**
 
-### **1️⃣ One Student Creates the Central GitHub Repository**
+### **1️⃣ Student 1 Creates the Central GitHub Repository**
 
-- One group member will **create a new repository on GitHub** named `groupX-pycalc` (replace `X` with the group number).
-- They will add the **other three group members as collaborators** with write access.
-- The repository should be **empty (no README, no .gitignore, no license).**
+- One group member will **Fork** this repository, creating a new Repo on their machine and GitHub account.
+- They will add the **other three group members as collaborators** to the Fork, with write access.
 
-### **2️⃣ Clone the Repository Using GitHub Desktop**
+### **2️⃣ Students 2-3 Clone the Repository Using GitHub Desktop**
 
 1. Open **GitHub Desktop**.
 2. Click **File > Clone Repository**.
@@ -36,13 +35,17 @@ By the end of this activity, students will:
 
 ---
 
-## **📂 File Distribution & Organization**
+## **📂 File Distribution & Aggregation**
 
-Each student will download **one-fourth** of the files from: 🔗 [CI2023 Calculator Exercise](https://github.com/TheDeanLab/CI2023/tree/main/calculator-exercise)
+Each student downloads their **ZIP** file from: 🔗 [CI2023 Calculator Exercise](https://github.com/TheDeanLab/CI2023/tree/main/calculator-exercise)
+
+Unzip the files somewhere locally on your machine.
+
+The idea is that each of you has some portion of the project completed locally and you are going to push it to the project Repo.
 
 Each student should:
 
-1. **Download and move** their assigned files into their local repository folder.
+1. **Download and move** their assigned files into the cloned Repo.
 2. **Create a new branch** in GitHub Desktop:
    - Click **Current Branch > New Branch**.
    - Name the branch based on the feature (e.g., `push-files`).
