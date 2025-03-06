@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.fixture(scope="session")
 def qt():
     from PyQt5.QtWidgets import QApplication
@@ -17,11 +18,13 @@ def view(qt):
 
     yield PyCalcUi()
 
+
 @pytest.fixture(scope="session")
 def model():
     from pycalc.model import evaluateExpression
 
     yield evaluateExpression
+
 
 @pytest.fixture(scope="session")
 def controller(model, view):
